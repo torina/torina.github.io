@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+        body{
+          padding:15px;
+          color: #071F4E;
+        }
+
+        a, u {
+            text-decoration: none;
+        }
+        h3, p{
+          font-family: Arial, sans-serif;
+          margin-top:0;
+          }
+        .img-list {
+          margin:0 auto;
+        }
+
+        .img-list ol,
+        .img-list ul {
+          list-style:none;
+        }
+
+        .img-list-gutter {
+          padding:0;
+        }
+
+        .img-list-item {
+          border-bottom:1px solid #c2c2c2;
+          padding-bottom:2em;
+          margin-bottom:2em;
+        }
+
+        .img-list-text {
+          padding: 1em 0;
+        }
+
+        @media (min-width:600px) {
+
+          .image-list-gutter {
+            display:table;
+          }
+
+          .img-list-image,
+          .img-list-text {
+            display:table-cell;
+            vertical-align:top;
+          }
+
+          .img-list-text {
+            padding: 0 0 0 38px;
+          }
+
+          .img-list-image {
+            min-width:300px;
+          }
+
+          .img-list-src {
+            width:100%;
+            max-width:500px;
+          }
+
+        }
+
+        @media (min-width:764px) {
+
+          .img-list-text {
+            padding: 0 0 0 48px;
+          }
+
+          .img-list-image {
+            min-width:356px;
+            max-width:356px;
+          }
+
+        }
+
+.pure-material-button-contained {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    padding: 0 16px;
+    min-width: 64px;
+    height: 36px;
+    vertical-align: bottom;
+    text-align: center;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+    background-color: #0E3E9B;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    font-family: var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 36px;
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+
+.pure-material-button-contained::-moz-focus-inner {
+    border: none;
+}
+
+/* Overlay */
+.pure-material-button-contained::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+/* Ripple */
+.pure-material-button-contained::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    padding: 50%;
+    width: 32px; /* Safari */
+    height: 32px; /* Safari */
+    background-color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
+    transition: opacity 1s, transform 0.5s;
+}
+
+/* Hover, Focus */
+.pure-material-button-contained:hover,
+.pure-material-button-contained:focus {
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.pure-material-button-contained:hover::before {
+    opacity: 0.08;
+}
+
+.pure-material-button-contained:focus::before {
+    opacity: 0.24;
+}
+
+.pure-material-button-contained:hover:focus::before {
+    opacity: 0.3;
+}
+
+/* Active */
+.pure-material-button-contained:active {
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.pure-material-button-contained:active::after {
+    opacity: 0.32;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0s;
+}
+
+/* Disabled */
+.pure-material-button-contained:disabled {
+    color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38);
+    background-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.12);
+    box-shadow: none;
+    cursor: initial;
+}
+
+.pure-material-button-contained:disabled::before {
+    opacity: 0;
+}
+
+.pure-material-button-contained:disabled::after {
+    opacity: 0;
+}
+</style>
+</head>
+<body>
+
+<section class="img-list">
+  <ol class='img-list-parent'>
+    
+   
+
+ <li class='img-list-item'> <div class='img-list-gutter'> <div class='img-list-image'> <img class='img-list-src' 
+src=' https://curearthritis.org/wp-content/uploads/2018/03/AFAR-American-Federation-For-Aging-Research.jpg '> </div> <div class='img-list-text'> 
+ <h3> AFAR American Federation of Aging Research </h3>
+ <p> The American Federation for Aging Research (AFAR) is a leading, not-for-profit organization supporting biomedical aging research. AFAR provides trustworthy information on the basic biology of aging, its connection to age-related diseases, and the socioeconomic benefits of living healthier, longer. </p>
+<a href= https://www.afar.org/learn   class='pure-material-button-contained'>Visit website</a> </div></div></li>
+
+
+ <li class='img-list-item'> <div class='img-list-gutter'> <div class='img-list-image'> <img class='img-list-src' 
+src=' https://lifepod.com/wp-content/uploads/2018/11/blog_logo-aginginplace.png '> </div> <div class='img-list-text'> 
+ <h3> Aging and Health Technology Watch </h3>
+ <p> Laurie M. Orlov, a tech industry veteran, writer, speaker and elder care advocate, is the founder of Aging and Health Technology Watch — market research, trends, blogs and reports that provide thought leadership, analysis and guidance about health and aging-related technologies and services that enable boomers and seniors to sustain and improve their quality of life. </p>
+<a href= https://www.ageinplacetech.com/about   class='pure-material-button-contained'>Visit website</a> </div></div></li>
+
+
+ <li class='img-list-item'> <div class='img-list-gutter'> <div class='img-list-image'> <img class='img-list-src' 
+src=' http://i.imgur.com/DG49Ht8.png '> </div> <div class='img-list-text'> 
+ <h3> AGINGSCIENCES — Anti-Aging Firewalls </h3>
+ <p> A weblog on the sciences and practices of living healthily very long. Dr Vince Giuliano, founder of AgingSciences & Anti-Aging Firewalls, is a chief scientist at Vivace Associates. He got a Ph.D. from Harvard University in applied physics and computer science (one of the first PhDs in computer science in what became known as computer science). He has also had many successful careers in technology. Vince Giuliano has been blogging for 7 years at anti-agingfirewalls.com and researching the anti-aging literature full-time for 10 years. </p>
+<a href= https://www.anti-agingfirewalls.com   class='pure-material-button-contained'>Visit website</a> </div></div></li>
+
+
+ <li class='img-list-item'> <div class='img-list-gutter'> <div class='img-list-image'> <img class='img-list-src' 
+src=' https://www.aarkstore.com/images/BioInformant.com%20Logo%20-%20white%20background.jpg '> </div> <div class='img-list-text'> 
+ <h3> Bioinformant </h3>
+ <p> Bioinformant is the World’s Largest Publisher of Stem Cell Industry News. Bioinformant founders already had interviewed over one-thousand stem cell industry executives, investors, and scientists. </p>
+<a href= https://bioinformant.com/company//   class='pure-material-button-contained'>Visit website</a> </div></div></li>
+
+
+ <li class='img-list-item'> <div class='img-list-gutter'> <div class='img-list-image'> <img class='img-list-src' 
+src=' https://i2.wp.com/changingaging.org/wp-content/uploads/2016/06/logo.png?fit=360%2C110&ssl=1 '> </div> <div class='img-list-text'> 
+ <h3> ChangingAging with Dr. Bill Thomass </h3>
+ <p> ChangingAging™ is a multi-blog platform challenging conventional views on aging. The team believes aging is a strength, rich in developmental potential and growth. Dr. Bill Thomas is an author, entrepreneur, musician, teacher, farmer and physician whose wide-ranging work explores the terrain of human aging. Best known for his health care system innovations, he is the founder of a global non-profit (The Eden Alternative) which works to improve the care provided to older people. He is the creator of The Green House® which Provider Magazine has called the “pinnacle of culture change.” </p>
+<a href= https://changingaging.org   class='pure-material-button-contained'>Visit website</a> </div></div></li>
+
+
+ <li class='img-list-item'> <div class='img-list-gutter'> <div class='img-list-image'> <img class='img-list-src' 
+src=' https://www.clubvita.co.uk/assets/images/backgrounds/ClubVita_logo_CMYK_test.jpg '> </div> <div class='img-list-text'> 
+ <h3> Club Vita Blog </h3>
+ <p> Club Vita is a centre of excellence for improving our understanding of patterns in human longevity. Its insights help pension funds, insurers and governments make affordable long-term promises, and foster innovation in longevity risk management.  Club Vita was founded in the UK in 2008 and has subsequently expanded to Canada in 2015 and the US in 2019. </p>
+<a href= https://www.clubvita.us   class='pure-material-button-contained'>Visit website</a> </div></div></li>
+
+
+ <li class='img-list-item'> <div class='img-list-gutter'> <div class='img-list-image'> <img class='img-list-src' 
+src=' https://daveasprey.com/wp-content/uploads/2020/07/dave-asprey-logo.png '> </div> <div class='img-list-text'> 
+ <h3> Dave Asprey Blog </h3>
+ <p> Founder of Bulletproof 360, Chairman of Silicon Valley Health Institute and NYT bestselling autor of «Head Strong», «The Bulletproof Diet», and «Game Changers». Investor and technology entrepreneur, who approaches longevity from a dietary perspective. </p>
+<a href= https://daveasprey.com/blog//   class='pure-material-button-contained'>Visit website</a> </div></div></li>
+
+
+ <li class='img-list-item'> <div class='img-list-gutter'> <div class='img-list-image'> <img class='img-list-src' 
+src=' https://www.lifespan.io/wp-content/uploads/2019/05/fight-aging-large-logo.jpg '> </div> <div class='img-list-text'> 
+ <h3> Fight Aging! </h3>
+ <p> Fight Aging! is a life extension blog dedicated to longevity research advocacy. They cover emerging research and technology that could help their readers live longer, healthier lives. Occasionally, Fight Aging! raises funds on behalf of relevant scientific research — they currently affiliate with 25 longevity-related research institutions, including SENS, the Methuselah Foundation, and LEAF.  </p>
+<a href= https://www.fightaging.org/about   class='pure-material-button-contained'>Visit website</a> </div></div></li>
+
+
+ <li class='img-list-item'> <div class='img-list-gutter'> <div class='img-list-image'> <img class='img-list-src' 
+src=' https://i2.wp.com/www.longevityadvice.com/wp-content/uploads/2020/07/cropped-Logo_Design_Longevity_Advice-02.png?fit=1173%2C266&ssl=1 '> </div> <div class='img-list-text'> 
+ <h3> Longevity Advice </h3>
+ <p> Two founders of Longevity Advice are J.P. and Rachel.They started this website as an informational resource for people who are not scientists but who still want to know what science can tell them about extending their healthy lives, today. </p>
+<a href= https://www.longevityadvice.com   class='pure-material-button-contained'>Visit website</a> </div></div></li>
+
+
+ <li class='img-list-item'> <div class='img-list-gutter'> <div class='img-list-image'> <img class='img-list-src' 
+src=' https://www.lifespan.io/wp-content/uploads/2018/04/JoshMitteldorf.png '> </div> <div class='img-list-text'> 
+ <h3> Josh Mitteldorf | Aging Matters </h3>
+ <p> Weekly blog on ageing science by Josh Mitteldorf, theoretical-biologist, author of the book Cracking the Aging Code: The NEw Science of Growing Old — And What It Means for Staying Young. Josh Mitteldorf has a PhD from UPenn. Mitteldorf has had visiting research and teaching positions at various universities including MIT, Harvard, and Berkeley. </p>
+<a href= https://joshmitteldorf.scienceblog.com   class='pure-material-button-contained'>Visit website</a> </div></div></li>
+
+
+ <li class='img-list-item'> <div class='img-list-gutter'> <div class='img-list-image'> <img class='img-list-src' 
+src=' https://www.lifespan.io/wp-content/uploads/LEAF_FB_Preview.png '> </div> <div class='img-list-text'> 
+ <h3> Life Expansion Advocacy Foundation News </h3>
+ <p> LEAF – or the Life Expansion Advocacy Foundation, seeks to “end age-related diseases.” As a nonprofit, they connect longevity researchers to investors to further the pursuit of expanding healthy human lifespans. They are conducting longevity podcasts, webinars, conferences, lifespan news show, daily news issues. </p>
+<a href= https://www.lifespan.io/news//   class='pure-material-button-contained'>Visit website</a> </div></div></li>
+
+
+ <li class='img-list-item'> <div class='img-list-gutter'> <div class='img-list-image'> <img class='img-list-src' 
+src=' https://mma.prnewswire.com/media/1019900/Life_Extension_Logo.jpg?p=facebook '> </div> <div class='img-list-text'> 
+ <h3> Life Extension Daily News </h3>
+ <p> Life Extension Daily News covers topics of health and wellness, dietary supplements, diseases such as atherosclerosis, arthritis, and stroke, and numerous other subjects of interest to those who wish to live a longer, healthier life are posted each day in Life Extension Daily News. New articles posted seven days a week under the headings of vitamins, nutrition, disease and aging cover a range of subjects, from health tips for the lay person to peer-reviewed medical journal reports. </p>
+<a href= https://www.lifeextension.com/news   class='pure-material-button-contained'>Visit website</a> </div></div></li>
+
+
+ <li class='img-list-item'> <div class='img-list-gutter'> <div class='img-list-image'> <img class='img-list-src' 
+src=' https://longevitylive.com/wp-content/uploads/2020/08/logo.jpg '> </div> <div class='img-list-text'> 
+ <h3> Longevity </h3>
+ <p> For over 30 years, Longevity has published high-quality content relating to healthy living and wellness – underpinned by its core editorial thematic, related to aging. Longevity provides readers with proven healthy living practices. </p>
+<a href= https://longevitylive.com   class='pure-material-button-contained'>Visit website</a> </div></div></li>
+
+
+ <li class='img-list-item'> <div class='img-list-gutter'> <div class='img-list-image'> <img class='img-list-src' 
+src=' https://images.squarespace-cdn.com/content/v1/534cff75e4b0ce1c16de5321/1615422706963-8Z11FXIRTCADKEJU9WHQ/ke17ZwdGBToddI8pDm48kEa841T9D8B1ZsA70ek5kBcUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2djm9SCgdvVROSYryRp9vnSnihJsGRmd3QZlGdaCmRUxACjLISwBs8eEdxAxTptZAUg/Longevity+Blog+-+Banners+-+Short.png '> </div> <div class='img-list-text'> 
+ <h3> Longevity Blog </h3>
+ <p> New technologies are enabling longer, healthier lives. Longevity Blog simplifies complex topics with a view to build a personalised and affordable approach to wellness. Longevity Blog experiments with the latest anti-aging and health optimisation trends, posts oppinions of top experts and entrepreneurs in the fields of biotechnology, gerontology and rejuvenation. </p>
+<a href= https://www.nickengerer.org   class='pure-material-button-contained'>Visit website</a> </div></div></li>
+
+
+ <li class='img-list-item'> <div class='img-list-gutter'> <div class='img-list-image'> <img class='img-list-src' 
+src=' https://sergeyyoung.com/images/share-main.jpg '> </div> <div class='img-list-text'> 
+ <h3> Longevity Explained by Sergey Young </h3>
+ <p> Sergey Young is a longevity investor and visionary with a mission to extend healthy lifespans of at least one billion people. Sergey is on the Board of Directors of the American Federation of Aging Research (AFAR) and the Development Sponsor of Age Reversal XPRIZE global competition designed to cure aging. Sergey has been featured as a top longevity expert and contributor on Fox News, BBC, Sky News, Forbes, and Thrive Global. </p>
+<a href= https://sergeyyoung.com/articles   class='pure-material-button-contained'>Visit website</a> </div></div></li>
+
+
+ <li class='img-list-item'> <div class='img-list-gutter'> <div class='img-list-image'> <img class='img-list-src' 
+src=' https://pbs.twimg.com/profile_images/533406799366336513/xVnfQ338_400x400.png '> </div> <div class='img-list-text'> 
+ <h3> Longevity Reporter </h3>
+ <p> News about aging & longevity. And how to achieve it using preventive & regenerative medicine, biotech, and social policy. </p>
+<a href= https://twitter.com/newsinlongevity   class='pure-material-button-contained'>Visit website</a> </div></div></li>
+
+
+ <li class='img-list-item'> <div class='img-list-gutter'> <div class='img-list-image'> <img class='img-list-src' 
+src=' https://events.masterinvestor.co.uk/wp-content/uploads/2020/10/longevity-technology-logo.jpg '> </div> <div class='img-list-text'> 
+ <h3> Longevity.Technology </h3>
+ <p> Daily news and insights on research, investments and technologies that extend life and improve quality of life. Longevity.Technology covers such Longevity sub-sectors as Biotech, Diagnostics, Agetech, Supplements, Innovation, AI/Digital. </p>
+<a href= https://www.longevity.technology   class='pure-material-button-contained'>Visit website</a> </div></div></li>
+
+
+ <li class='img-list-item'> <div class='img-list-gutter'> <div class='img-list-image'> <img class='img-list-src' 
+src=' https://i0.wp.com/www.bisu.bio/wp-content/uploads/2020/04/Podcast_Instagram_Ep3-Michael-1.jpg?w=1080&ssl=1 '> </div> <div class='img-list-text'> 
+ <h3> Michael Lustgarten Blog </h3>
+ <p> Dr. Michael Lustgarten is Scientist II on the Nutrition, Exercise Physiology, and Sarcopenia (NEPS) Team at the HNRCA. His research currently focuses on the role of the gut microbiome and serum metabolome on muscle mass and function in older adults. Dr. Lustgarten has been a guest lecturer at the Friedman School of Nutrition Science and Policy on topics such as the gut microbiome, serum metabolome, oxidative stress, exercise, and sarcopenia. He has contributed to 25 publications in leading peer-reviewed journals that have been cited more than 2,400 times, including 17 manuscripts as the first or last author. </p>
+<a href= https://michaellustgarten.com   class='pure-material-button-contained'>Visit website</a> </div></div></li>
+
+
+ <li class='img-list-item'> <div class='img-list-gutter'> <div class='img-list-image'> <img class='img-list-src' 
+src=' https://images.squarespace-cdn.com/content/v1/5877e0091b631b1b2c8ac78d/1496446350982-G6NDWNVT8A0MHIYQQAH1/ke17ZwdGBToddI8pDm48kLnfZvQ9iwxKU6eubAUQjId7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1Uf479GMBNBfhHsrrjiU7oVFJ8_wlwITqu6jJqO9L0NwOoT__5iE7svB1u_pQDzoSaA/147.jpg?format=2500w '> </div> <div class='img-list-text'> 
+ <h3> NeuroFantastic by Shelly Xuelai Fan </h3>
+ <p> Shelly Xuelai Fan is a neuroscientist-turned-science writer. She completed her PhD in neuroscience at the University of British Columbia, where she developed novel treatments for neurodegeneration. While studying biological brains, she became fascinated with AI and all things biotech. Following graduation, she moved to UCSF to study blood-based factors that rejuvenate aged brains. She is the co-founder of Vantastic Media, a media venture that explores science stories through text and video, and runs the award-winning blog NeuroFantastic.com. </p>
+<a href= https://neurofantastic.com   class='pure-material-button-contained'>Visit website</a> </div></div></li>
+
+
+ <li class='img-list-item'> <div class='img-list-gutter'> <div class='img-list-image'> <img class='img-list-src' 
+src=' https://peterattiamd.com/wp-content/uploads/2018/01/share-image.png '> </div> <div class='img-list-text'> 
+ <h3> Peter Attia MD Blog </h3>
+ <p> Peter is a physician focusing on the applied science of longevity. His practice deals extensively with nutritional interventions, exercise physiology, sleep physiology, emotional and mental health, and pharmacology to increase lifespan (how long you live), while simultaneously improving healthspan (the quality of your life). Peter is the co-founder and Chief Medical Officer of the fasting app Zero. Peter is an advisor to, and/or investor in, the companies Virta Health, Hu Kitchen, Oura Health Oy, Magic Spoon Cereal, Inevitable Ventures, Salutoceuticals, Dexcom, Maui Nui Venison, and Supercast. Peter is co-chairman of the board of Frontier Acquisition Corp. </p>
+<a href= https://peterattiamd.com/articles/   class='pure-material-button-contained'>Visit website</a> </div></div></li>
+
+
+ <li class='img-list-item'> <div class='img-list-gutter'> <div class='img-list-image'> <img class='img-list-src' 
+src=' https://greenlightinsights.com/wp-content/uploads/2015/12/singularity-hub.png '> </div> <div class='img-list-text'> 
+ <h3> Singularity Hub </h3>
+ <p> Singularity Hub is Singularity University’s blog. Its content centers on exponential technology, with a heavy emphasis on artificial intelligence, robotics, and biotech — longevity-specific articles are interwoven throughout . The blog publishes once a day. </p>
+<a href= https://singularityhub.com   class='pure-material-button-contained'>Visit website</a> </div></div></li>
+
+
+ <li class='img-list-item'> <div class='img-list-gutter'> <div class='img-list-image'> <img class='img-list-src' 
+src=' https://i2.wp.com/nypost.com/wp-content/uploads/sites/2/2018/03/180323-anti-aging-secret-pill-feature.jpg?quality=80&strip=all&ssl=1 '> </div> <div class='img-list-text'> 
+ <h3> SLOW Aging </h3>
+ <p> SLOW Aging philosophy focuses on the complementary goals of disease prevention and maintaining a high quality of life. These aims are distinct from anti-ageing practices, which seek only to stop ageing in its tracks. The SLOW Aging editor is  Kate Marie, the co-author of two books, Slow Ageing Guide to Skin Rejuvenation and the best-selling health guide, Fast Living, Slow Ageing. </p>
+<a href= https://slowaging.org/   class='pure-material-button-contained'>Visit website</a> </div></div></li>
+
+
+ <li class='img-list-item'> <div class='img-list-gutter'> <div class='img-list-image'> <img class='img-list-src' 
+src=' https://mma.prnewswire.com/media/1019900/Life_Extension_Logo.jpg?p=facebook '> </div> <div class='img-list-text'> 
+ <h3> The Life Extension Blog </h3>
+ <p> Life Extension is a company that produces and sells high-quality, research-backed vitamins and supplements to extend healthy lifespans. This blog — along with Life Extension Magazine — centers on how supplementation can help overall wellness. While not explicitly focused on life extension, many of their articles tend to have complementary research that would be valuable for anyone who wants to invest in optimizing their body.  </p>
+<a href= https://www.lifeextension.com   class='pure-material-button-contained'>Visit website</a> </div></div></li>
+
+
+ <li class='img-list-item'> <div class='img-list-gutter'> <div class='img-list-image'> <img class='img-list-src' 
+src=' http://answerals.org/wp-content/uploads/2018/02/Snip20170905_16-1.png '> </div> <div class='img-list-text'> 
+ <h3> The Niche </h3>
+ <p> The Niche is the top, most authoritative stem cell and regenerative medicine blog on the web and the only one to our knowledge written by a professor. It is mainly written by Professor Paul Knoepfler of UC Davis School of Medicine, an internationally respected stem cell biologist and educator.  </p>
+<a href= https://ipscell.com   class='pure-material-button-contained'>Visit website</a> </div></div></li>
+
+
+ <li class='img-list-item'> <div class='img-list-gutter'> <div class='img-list-image'> <img class='img-list-src' 
+src=' https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThB0cG7MUjNWdSRAagVFU-u5eoSiMET0z8jPd0mZ6U3RKURqeI2yEz_IUac0BWhw_2dA&usqp=CAU '> </div> <div class='img-list-text'> 
+ <h3> The Oxford Institute of Population Ageing Blog </h3>
+ <p> The Oxford Institute of Population Ageing was established in 1998. Based on the US Population Center, it was funded by a grant from the National Institute of Health (National Institute on Aging - NIA) to establish the UK's first population centre on the demography and economics of ageing populations. Their aim is to undertake research into the implications of population change.  </p>
+<a href= https://www.ageing.ox.ac.uk/blog   class='pure-material-button-contained'>Visit website</a> </div></div></li>
+
+
+          
+    
+  </ol>
+</section>
+
+</body>
+</html>
