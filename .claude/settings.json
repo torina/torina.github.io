@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp /tmp/google51bc03f40abe1521.html /Users/viktoria/services/torina.github.io/public/)",
+      "Bash(cp -r /tmp/_old_site_backup /Users/viktoria/services/torina.github.io/_old_site)",
+      "Bash(npm install:*)"
+    ],
+    "additionalDirectories": [
+      "/Users/viktoria/services/torina.github.io/src/app/blog"
+    ]
+  }
+}
