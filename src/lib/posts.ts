@@ -12,6 +12,7 @@ export interface PostMeta {
   title: string;
   date: string;
   excerpt?: string;
+  image?: string;
   tags?: string[];
   readingTime: string;
 }
@@ -37,6 +38,7 @@ export function getSortedPosts(): PostMeta[] {
       title: data.title ?? slug,
       date: data.date ?? "",
       excerpt: data.excerpt ?? "",
+      image: data.image ?? "",
       tags: data.tags ?? [],
       readingTime: stats.text,
     } as PostMeta;
@@ -61,6 +63,7 @@ export async function getPostBySlug(slug: string): Promise<Post | null> {
     title: data.title ?? slug,
     date: data.date ?? "",
     excerpt: data.excerpt ?? "",
+    image: data.image ?? "",
     tags: data.tags ?? [],
     readingTime: stats.text,
     contentHtml,

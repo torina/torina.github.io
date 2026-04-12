@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { getPostBySlug, getAllPostSlugs } from "@/lib/posts";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
@@ -59,6 +60,18 @@ export default async function BlogPost({ params }: PageProps) {
                   {tag}
                 </span>
               ))}
+            </div>
+          )}
+          {post.image && (
+            <div className="mt-6 rounded-lg overflow-hidden border border-border">
+              <Image
+                src={post.image}
+                alt={post.title}
+                width={768}
+                height={432}
+                className="w-full h-auto object-cover"
+                priority
+              />
             </div>
           )}
         </header>

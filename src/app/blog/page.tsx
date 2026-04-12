@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { getSortedPosts } from "@/lib/posts";
 import type { Metadata } from "next";
 
@@ -27,6 +28,17 @@ export default function BlogIndex() {
               className="group border-b border-border pb-8 last:border-0"
             >
               <Link href={`/blog/${post.slug}`} className="block">
+                {post.image && (
+                  <div className="rounded-lg overflow-hidden border border-border mb-4">
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      width={768}
+                      height={400}
+                      className="w-full h-48 object-cover group-hover:scale-[1.02] transition-transform duration-300"
+                    />
+                  </div>
+                )}
                 <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
                   <h2 className="text-xl font-semibold group-hover:text-accent transition-colors">
                     {post.title}
