@@ -15,7 +15,7 @@ export default function Header() {
     <header className="border-b border-border bg-card/80 backdrop-blur-sm sticky top-0 z-50">
       <nav className="mx-auto max-w-3xl px-6 py-4 flex items-center justify-between">
         <Link href="/" className="text-lg font-semibold tracking-tight hover:text-accent transition-colors">
-          Viktoriia
+          Viktoria Bula
         </Link>
         <ul className="flex gap-6 text-sm">
           {navLinks.map(({ href, label }) => (

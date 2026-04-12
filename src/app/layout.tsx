@@ -16,11 +16,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Viktoriia — Programmer & Technical Writer",
-    template: "%s | Viktoriia",
+    default: "Viktoria Bula — Engineering Leadership",
+    template: "%s | Viktoria Bula",
   },
   description:
-    "Programmer and Technical Writer. Writing about engineering, AI, and building great software.",
+    "Engineering Manager with experience across fintech, data analytics, AI, and e-commerce. Writing about engineering, AI, and building great software.",
 };
 
 export default function RootLayout({

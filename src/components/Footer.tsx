@@ -2,10 +2,10 @@ export default function Footer() {
   return (
     <footer className="border-t border-border mt-auto">
       <div className="mx-auto max-w-3xl px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted">
-        <p>&copy; {new Date().getFullYear()} Viktoriia. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Viktoria Bula. All rights reserved.</p>
         <div className="flex gap-5">
           <a
-            href="https://www.linkedin.com/in/viktoriia"
+            href="https://www.linkedin.com/in/viktoriaab"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-accent transition-colors"
