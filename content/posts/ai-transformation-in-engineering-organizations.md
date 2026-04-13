@@ -1,5 +1,5 @@
 ---
-title: "The AI Transformation Playbook for Engineering Organizations"
+title: "AI Transformation Playbook for engineering organizations"
 date: "2026-04-12"
 excerpt: "A practical, opinionated guide to embedding AI into the software development lifecycle — without the theater."
 image: "/images/blog/ai-transformation.jpg"
@@ -9,7 +9,7 @@ tags:
   - Leadership
 ---
 
-*A practical, opinionated guide to embedding AI into the software development lifecycle — without the theater.*
+*A practical, opinionated guide to embedding AI into the software development lifecycle*
 
 ---
 
@@ -17,7 +17,7 @@ tags:
 
 Every company wants to leverage AI. Very few actually are.
 
-Walk into most engineering organizations today and you will find the same pattern: a steering committee, a slide deck, a proof-of-concept that nobody uses, and a growing suspicion that the whole thing is a fashion statement. Meanwhile, in the same building, individual developers have quietly rewired their personal workflows around AI and are shipping two to five times faster than they did a year ago.
+Walk into most engineering organizations today and you will find the same pattern: a steering committee, a slide deck, a proof-of-concept that nobody uses. Meanwhile, at the same company, individual developers have quietly rewired their personal workflows around AI and are shipping 5-10 times faster than they did a year ago.
 
 That gap — between the organization that *talks* about AI and the developers who *use* it — is the real problem. Closing it is not a matter of tooling budgets or vendor selection. It is a matter of process, discipline, and leadership willingness to let go of rituals that no longer serve the work.
 
