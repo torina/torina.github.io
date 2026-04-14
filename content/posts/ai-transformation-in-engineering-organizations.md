@@ -19,7 +19,7 @@ Every company wants to leverage AI. Very few actually are.
 
 Walk into most engineering organizations today and you will find the same pattern: a steering committee, a slide deck, a proof-of-concept that nobody uses. Meanwhile, at the same company, individual developers have quietly rewired their personal workflows around AI and are shipping 5-10 times faster than they did a year ago.
 
-That gap — between the organization that *talks* about AI and the developers who *use* it — is the real problem. Closing it is not a matter of tooling budgets or vendor selection. It is a matter of process, discipline, and leadership willingness to let go of rituals that no longer serve the work.
+That gap — between the organization that *talks* about AI and the developers who *use* it — is the real problem. Closing it is not a matter of tooling budgets. It is a matter of process, discipline, and leadership willingness to let go of rituals that no longer serve the work.
 
 This is the playbook I use. It is opinionated on purpose. If you want a vendor-neutral survey of the space, this is not it.
 
