@@ -19,7 +19,7 @@ If you have been in software development long enough, you have probably witnesse
 
 ## The elephant in the standup
 
-Developers are using AI. Not in some theoretical, "we are exploring the possibilities" kind of way. They are using it right now, today, to write code, to debug, to generate tests, to scaffold entire features. The individual productivity boost is not incremental — it is dramatic. A developer with a good AI setup and a clear spec can mass-produce in a day what used to take a sprint.
+Developers are using AI. Not in some theoretical, "we are exploring the possibilities" kind of way. They are using it right now, today, to write code, to debug, to generate tests, to scaffold entire features. A developer with a good AI setup and a clear spec can mass-produce in a day what used to take a sprint.
 
 And what are most companies doing about this? Running the same two-week Scrum ceremonies they ran in 2019. Sprint planning on Monday, grooming on Wednesday, retro on Friday, repeat forever. The process was designed for a world where the bottleneck was developer output. That bottleneck has shifted. Today, the bottleneck is **clarity** — knowing *what* to build and *why*, with enough precision that both a human and an AI can act on it.
 
