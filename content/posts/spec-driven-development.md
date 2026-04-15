@@ -1,8 +1,7 @@
 ---
-title: "Spec-Driven Development: Why Your Scrum Board Is a Museum Piece"
+title: "Spec-Driven Development: a practical guide"
 date: "2026-04-14"
-excerpt: "Scrum was built for a world where writing code was the bottleneck. With AI, the bottleneck has shifted to clarity — and your process should too."
-image: "/images/blog/spec-driven-development.jpg"
+excerpt: "Scrum was built for a world where writing code was the bottleneck. With AI, the bottleneck has shifted to clarity and processes should too."
 tags:
   - AI
   - Engineering
